@@ -1,0 +1,29 @@
+{
+  "name": "basevariables",
+  "version": "0.2.0",
+  "authors": [
+    "Martin Munro <mmunro@ltrr.arizona.edu>"
+  ],
+  "description": "Variables for automated CSS generation (currently SCSS flavored Sass).",
+  "main": [
+    "_uofaweb-variables.scss",
+    "_bootstrap_button.scss"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "colors",
+    "fonts",
+    "dimensions",
+    "sass"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
