@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Bootstrap for Sass buttons in many different themed colors.
+ */
+
+@each $dcolor in $ua_dark_colors {
+  @include button-variant($light_foreground, $dcolor, $dcolor)
+}
+
+@each $lcolor in $ua_light_colors {
+  @include button-variant($dark_foreground, $lcolor, $lcolor)
+}

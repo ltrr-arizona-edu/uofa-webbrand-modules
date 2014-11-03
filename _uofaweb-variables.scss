@@ -1,44 +1,57 @@
+// =============================================================================
+// Variables
+// =============================================================================
+
 //
 // University of Arizona colors
 //
 
 // Cochineal Red
-$cochineal_red: rgb(171, 5, 32);
-$cochineal_red_60w: rgb(222, 160, 148);
-$cochineal_red_30w: rgb(204, 102, 94);
-$cochineal_red_30b: rgb(143, 17, 36);
-$cochineal_red_60b: rgb(99, 0, 11);
+$cochineal_red: #AB0520;
+$cochineal_red_sixty_white: #DEA094;
+$cochineal_red_thirty_white: #CC665E;
+$cochineal_red_thirty_black: #8F1124;
+$cochineal_red_sixty_black: #63000B;
 
 // Arizona Blue
-$arizona_blue: rgb(12, 35, 75);
-$arizona_blue_60w: rgb(123, 137, 174);
-$arizona_blue_30w: rgb(57, 81, 128);
-$arizona_blue_30b: rgb(0, 25, 74);
-$arizona_blue_60b: rgb(0, 1, 54);
+$arizona_blue: #0C234b;
+$arizona_blue_sixty_white: #7B89AE;
+$arizona_blue_thirty_white: #395180;
+$arizona_blue_thirty_black: #00194A;
+$arizona_blue_sixty_black: #000136;
 
 // Secondary Palette
-$cactus: rgb(92, 135, 39);
-$sky: rgb(132, 210, 226);
-$river: rgb(7, 104, 115);
-$sand: rgb(241, 158, 31);
-$mesa: rgb(183, 85, 39);
-$brick: rgb(74, 48, 39);
+$cactus: #5C8727;
+$sky: #84D2E2;
+$river: #076873;
+$sand: #F19E1F;
+$mesa: #B75527;
+$brick: #4A3027;
 
 // Neutral Palette
-$light_cactus: rgb(207, 224, 216);
-$light_sky: rgb(200, 217, 216);
-$light_river: rgb(182, 190, 193);
-$light_sand: rgb(252, 225, 182);
-$light_mesa: rgb(250, 231, 216);
-$light_brick: rgb(230, 227, 217);
+$light_cactus: #CFE0D8;
+$light_sky: #C8D9D8;
+$light_river: #B6BEC1;
+$light_sand: #FCE1B6;
+$light_mesa: #FAE7D8;
+$light_brick: #E6E3D9;
 
 // Legacy Palette
-$sage: rgb(74, 99, 78);
-$silver: rgb(111, 134, 141);
-$ash: rgb(51, 51, 51);
-$dark_silver: rgb(73, 89, 94);
-$silver_tint: rgb(238, 241, 241);
-$ash_tint: rgb(247, 249, 249);
+$sage: #4A634E; // Also specified as hsl(130, 14%, 34%)
+$silver: #6F868D; // Also specified as #647980
+$ash: #333333;
+$dark_silver: #49595E;
+$silver_tint: #EEF1F1;
+$ash_tint: #F7F9F9;
+
+// Lists of colors
+$ua_dark_colors: $cochineal_red, $cochineal_red_sixty_white, $cochineal_red_thirty_white, $cochineal_red_thirty_black, $cochineal_red_sixty_black, $arizona_blue, $arizona_blue_sixty_white, $arizona_blue_thirty_white, $arizona_blue_thirty_black, $arizona_blue_sixty_black, $cactus, $sky, $river, $sand, $mesa, $brick, $light_cactus, $sage, $silver, $ash, $dark_silver;
+$ua_light_colors: $light_sky, $light_river, $light_sand, $light_mesa, $light_brick, $silver_tint, $ash_tint;
+$ua_brand_colors: join($ua_dark_colors, $ua_light_colors);
+
+// Non-specific foregrounds
+$dark_foreground: #647980;
+$light_foreground: #fff;
 
 //
 // University of Arizona web font stacks
