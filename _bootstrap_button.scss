@@ -4,13 +4,13 @@
  */
 
 @each $dcolor in $ua_dark_colors {
-  .btn-#{dcolor} {
+  .btn-#{$dcolor} {
     @include button-variant($light_foreground, $dcolor, $dcolor);
   }
 }
 
 @each $lcolor in $ua_light_colors {
-  .btn-#{lcolor} {
+  .btn-#{$lcolor} {
     @include button-variant($dark_foreground, $lcolor, $lcolor);
   }
 }
