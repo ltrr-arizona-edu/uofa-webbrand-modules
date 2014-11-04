@@ -6,48 +6,49 @@
 // University of Arizona colors
 //
 
-// Cochineal Red
-$cochineal_red: #AB0520;
-$cochineal_red_sixty_white: #DEA094;
-$cochineal_red_thirty_white: #CC665E;
-$cochineal_red_thirty_black: #8F1124;
-$cochineal_red_sixty_black: #63000B;
+$ua_dark_colors: (
+  // Cochineal Red
+  "cochineal_red": #AB0520,
+  "cochineal_red_sixty_white": #DEA094,
+  "cochineal_red_thirty_white": #CC665E,
+  "cochineal_red_thirty_black": #8F1124,
+  "cochineal_red_sixty_black": #63000B,
 
-// Arizona Blue
-$arizona_blue: #0C234b;
-$arizona_blue_sixty_white: #7B89AE;
-$arizona_blue_thirty_white: #395180;
-$arizona_blue_thirty_black: #00194A;
-$arizona_blue_sixty_black: #000136;
+  // Arizona Blue
+  "arizona_blue": #0C234b,
+  "arizona_blue_sixty_white": #7B89AE,
+  "arizona_blue_thirty_white": #395180,
+  "arizona_blue_thirty_black": #00194A,
+  "arizona_blue_sixty_black": #000136,
 
-// Secondary Palette
-$cactus: #5C8727;
-$sky: #84D2E2;
-$river: #076873;
-$sand: #F19E1F;
-$mesa: #B75527;
-$brick: #4A3027;
+  // Secondary Palette
+  "cactus": #5C8727,
+  "sky": #84D2E2,
+  "river": #076873,
+  "sand": #F19E1F,
+  "mesa": #B75527,
+  "brick": #4A3027,
 
-// Neutral Palette
-$light_cactus: #CFE0D8;
-$light_sky: #C8D9D8;
-$light_river: #B6BEC1;
-$light_sand: #FCE1B6;
-$light_mesa: #FAE7D8;
-$light_brick: #E6E3D9;
+  // Legacy Palette
+  "sage": #4A634E, // Also specified as hsl(130, 14%, 34%)
+  "silver": #6F868D, // Also specified as #647980
+  "ash": #333333,
+  "dark_silver": #49595E);
 
-// Legacy Palette
-$sage: #4A634E; // Also specified as hsl(130, 14%, 34%)
-$silver: #6F868D; // Also specified as #647980
-$ash: #333333;
-$dark_silver: #49595E;
-$silver_tint: #EEF1F1;
-$ash_tint: #F7F9F9;
+$ua_light_colors: (
+  // Neutral Palette
+  "light_cactus": #CFE0D8,
+  "light_sky": #C8D9D8,
+  "light_river": #B6BEC1,
+  "light_sand": #FCE1B6,
+  "light_mesa": #FAE7D8,
+  "light_brick": #E6E3D9,
 
-// Lists of colors
-$ua_dark_colors: $cochineal_red, $cochineal_red_sixty_white, $cochineal_red_thirty_white, $cochineal_red_thirty_black, $cochineal_red_sixty_black, $arizona_blue, $arizona_blue_sixty_white, $arizona_blue_thirty_white, $arizona_blue_thirty_black, $arizona_blue_sixty_black, $cactus, $sky, $river, $sand, $mesa, $brick, $light_cactus, $sage, $silver, $ash, $dark_silver;
-$ua_light_colors: $light_sky, $light_river, $light_sand, $light_mesa, $light_brick, $silver_tint, $ash_tint;
-$ua_brand_colors: join($ua_dark_colors, $ua_light_colors);
+  // Legacy Palette
+  "silver_tint": #EEF1F1,
+  "ash_tint": #F7F9F9);
+
+$ua_brand_colors: map-merge($ua_dark_colors, $ua_light_colors);
 
 // Non-specific foregrounds
 $dark_foreground: #647980;
